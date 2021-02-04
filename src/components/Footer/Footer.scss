@@ -1,0 +1,31 @@
+@import '@/assets/stylesheets/utils/variables.scss';
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 40px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.footer__school {
+  display: flex;
+  align-items: center;
+  width: 95px;
+  height: 25px;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+.footer__link {
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.footer__menu {
+  margin-left: 20px;
+  color: $color-link;
+  text-decoration: underline;
+}

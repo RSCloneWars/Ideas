@@ -1,0 +1,22 @@
+.recipe__summary {
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 169px;
+  text-align: justify;
+  margin-top: 0.3rem;
+}
+
+.recipe__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-top: 0.8rem;
+  text-align: center;
+  overflow: hidden;
+  font-size: 1.5rem;
+  height: 4.3rem;
+  line-height: initial;
+}

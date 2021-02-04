@@ -1,0 +1,11 @@
+@import '@/assets/stylesheets/utils/variables.scss';
+
+.navbar a,
+.navbar-brand,
+.navbar-nav,
+.nav-link {
+  color: $color-default;
+  &:hover {
+    color: $color-link-hover;
+  }
+}

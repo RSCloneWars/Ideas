@@ -1,0 +1,77 @@
+.recipes {
+  margin: 100px 0 0;
+  padding-bottom: 100px;
+}
+.recipeCategories {
+  display: flex;
+  align-content: center;
+  margin: 30px 0 35px 0
+}
+.recipeCategories div {
+  margin: 0 auto;
+}
+.recipeCategories label {
+  margin: 0;
+  border-left: 1px solid #007bff;
+}
+.recipeCategories label:first-child {
+  border-left: none;
+}
+.recipeCategories label span {
+  color: #434852;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 5px 9px;
+}
+.recipeCategories .rdGroup {
+  flex-direction: row;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+}
+.recipeCategories svg,
+.recipeCategories label span:first-child {
+  display: none;
+}
+
+/** Cards */
+.recipeCards {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.recipeCards div.cardContent {
+  padding-bottom: 0;
+}
+.recipeCards .time {
+  font-size: 15px;
+  color: #96999b;
+  float: right;
+  white-space: nowrap;
+  padding-left: 8px;
+}
+.recipeCards .time svg {
+  position: relative;
+  top: -2px;
+}
+.recipeCards .cardContentHead h3 {
+  font-size: 20px;
+  line-height: 1.4em;
+}
+.recipeCards div.cardWrapButton {
+  padding-top: 0;
+  padding-bottom: 0;
+  justify-content: center;
+}
+.recipeCards a.cardButton {
+  position: relative;
+  top: 20px;
+}
+.recipeCards a.cardButton:hover {
+  color: #007bff;
+  background-color: #fff;
+}
+.recipeCards a.cardButton span {
+  line-height: 27px;
+}
+.recipeCards p.cardContentText {
+  min-height: 60px;
+}
