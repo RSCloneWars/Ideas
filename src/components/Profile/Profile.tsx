@@ -21,6 +21,8 @@ import styles from '@/components/Recipes/recipes.scss';
 import { connect } from 'react-redux';
 import { addRecipe, removeRecipe } from '@/action/actionCreator';
 import { RootState } from '@/reducers/index';
+import {Link} from "react-router-dom";
+
 
 type Recipe = {
   id: number;
@@ -49,9 +51,9 @@ const Profile = ({ recipes }: ProfileProps) => {
             </CardContent>
 
             <CardActions className="d-flex p-0 justify-content-center theme-card">
-              <a href={`/recipe/${item.id}`} className={styles['cardButton']}>
+              <Link className={styles['cardButton']} to={`/recipe/${item.id}`}>
                 <Button className="theme-button" variant="primary">Learn More</Button>
-              </a>
+              </Link>
             </CardActions>
           </Card>
         </Grid>

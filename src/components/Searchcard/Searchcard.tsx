@@ -3,6 +3,7 @@ import { Button } from 'react-bootstrap';
 import CardActions from '@material-ui/core/CardActions';
 import { makeStyles } from '@material-ui/core/styles';
 import styles from '@/components/Recipes/recipes.scss';
+import {Link} from "react-router-dom";
 
 const Searchcard = (props: {id: number, image: string, title: string}): JSX.Element => {
   const CardStyle = makeStyles({
@@ -36,10 +37,10 @@ const Searchcard = (props: {id: number, image: string, title: string}): JSX.Elem
           <div className={classes.title}>`{props.title}`</div>
           </div>
           <CardActions className="d-flex p-0 justify-content-center theme-card">
-                  <a href={`/recipe/${props.id}`} className={styles['cardButton']}>
-                   <Button className="theme-button" variant="primary">Learn More</Button>
-                  </a>
-                </CardActions>
+            <Link className={styles['cardButton']} to={`/recipe/${props.id}`}>
+              <Button className="theme-button" variant="primary">Learn More</Button>
+            </Link>
+          </CardActions>
         </div>
       );
 }
